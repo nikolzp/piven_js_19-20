@@ -1,0 +1,17 @@
+@mixin cent {
+	margin: 0 auto;
+}
+
+@mixin ubuntu {
+	font-family: ubuntu;
+}
+
+@mixin farial {
+	font-family: arial;
+}
+
+@mixin links($color) {
+	display: block;
+	text-decoration: none;
+	color: $color;
+}

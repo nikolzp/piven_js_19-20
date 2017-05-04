@@ -1,0 +1,416 @@
+@import 'varmix';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	@include cent;
+	width: 1160px;
+}
+
+// Header
+
+.header {
+	display: block;
+	height: 131px;
+	margin-top: 35px;
+	&__logo {
+		margin-bottom: 33px;
+		margin-left: 5px;
+		float: left;
+	}
+
+	&__social {
+		float: right;
+		height: 20px;
+		width: 168px;
+		margin-top: 11px;
+	}
+
+	&__links {
+		background-image: url(../img/sprite-soc.png);
+		float: left;
+		width: 20px;
+		height: 20px;
+		display: block;
+		margin-left: 13px; 
+	}
+}
+.facebook {
+	background-position: 0 0;
+}
+
+.facebook:hover {
+	background-position: 0 18px;
+}
+
+.twitter {
+	background-position: 116px 0;
+}
+
+.twitter:hover {
+	background-position: 116px 18px;
+}
+
+.rss {
+	background-position: 84px 0;
+}
+.rss:hover {
+		background-position: 84px 18px;
+	}
+
+.linkedin {
+		background-position: 50px 0;
+	}
+
+.linkedin:hover {
+		background-position: 50px 18px;
+	}
+
+.skype {
+		background-position: 20px 0;
+	}
+
+.skype:hover {
+		background-position: 20px 18px;
+	}
+
+.menu {
+	clear: both;
+	display: block;		
+	width: 1160px;
+	height: 56px;
+	background-color: #2a2d32;
+
+	&__main {
+		float: left;
+	}
+
+	&__punkt {
+		display: inline-block;
+		text-align: center;
+		border-right: 1px solid #151515;
+		
+		&_active{
+			background-color: #248cec;
+		}
+
+		a {
+			@include ubuntu;
+			font-size: 14px;
+			width: 114px;
+			height: 35px;
+			@include cent;
+			margin-top: 20px;
+			@include links(white);
+		}
+		a:hover{
+			color: #f4b60d
+		}
+	}
+
+	&__serch {
+		display: block;
+		float: right;
+		margin-top: 8px;
+		margin-right: 10px;
+		border: 1px solid #181a1d;
+		box-sizing: border-box;
+		background-color: rgba(255, 255, 255, 0.05);
+		width: 241px;
+		height: 40px;
+		color: #fff;
+	}
+}
+
+.slider {
+	margin-top: 40px;
+	li {
+		list-style-type: none;
+	}
+}
+
+.informations {
+	display: flex;
+	margin-top: 49px;
+	height: 220px;
+}
+
+.info {
+	&__num {
+		float: left;
+		@include ubuntu;
+		font-size: 90px;
+		color: #2a2b2e;
+		opacity: 0.1;
+	}
+	&__img {
+		margin-top: 18px;
+		margin-left: 20px;
+	}
+	&__deskr {
+		@include ubuntu;
+		font-size: 20px;
+		margin-top: 10px;
+		margin-left: 125px;
+	}
+	&__artic {
+		@include farial;
+		font-size: 14px;
+		line-height: 19px;
+		margin-left: 125px;
+		margin-top: 20px;
+	}
+	&__rmore {
+		@include ubuntu;
+		font-size: 14px;
+		margin-left: 125px;
+		margin-top: 17px;
+		@include links(#000);
+
+		&:hover {
+			color: blue;
+		}
+	}
+}
+
+.plitki	{
+	height: 500px;
+	margin-top: 62px;
+	background-color: #2a2d32;
+
+	.box {
+		width: 1160px;
+		@include cent;
+
+	}
+
+	&__deskr {
+		@include ubuntu;
+		color: #fff;
+		padding-top: 45px;
+		font-size: 24px;
+	}
+
+	&__list {
+		display: inline-flex;
+		margin-top: 50px;
+	}
+
+	&__item {
+		background-image: url(../img/pl-opas.png); 
+		display: block;
+		width: 260px;
+		height: 260px;
+		margin-right: 35px;
+	
+
+		& img:hover {
+			opacity: 0.3;
+			background-color: rgb(47, 145, 234);  
+		}
+	}
+
+		p {
+			@include ubuntu;
+			overflow: visible;
+			color: #fff;
+			margin-top: 35px;
+			font-size: 16px;
+		}
+}
+
+.news {
+	height: 545px;
+	background-color: #f7f7f7;
+
+	&__bord {
+		display: flex;
+		width: 1160px;
+		@include cent;
+	}
+
+	&__deskr {
+		@include ubuntu;
+		font-size: 24px;
+		margin-top: 60px;
+		margin-bottom: 50px;
+	}
+
+	&__img1 {
+		float: left;
+		width: 150px;
+		height: 150px;
+		background-image: url(../img/adv-machin.png);
+	}
+
+	&__img2 {
+		float: left;
+		width: 150px;
+		height: 150px;
+		background-image: url(../img/pwf-tech.png);
+	}
+
+	&__seccol {
+		clear: both;
+		padding-top: 22px;
+	}
+
+	&__firstrow {
+		width: 570px;
+	}
+
+	&__secondrows {
+		margin-left: 31px;
+	}
+}
+
+.article {
+	margin-left: 191px;
+	width: 381px;
+	
+	span {
+		color: #0187f4;
+		cursor: pointer;
+	}
+
+	&__deskr {
+		@include ubuntu;
+		font-size: 16px;
+	}
+
+	&__article {
+		@include farial;
+		font-size: 13px;
+		margin-top: 20px;
+	}
+}
+
+.panel {
+	margin-bottom: 5px;
+
+	&__indicator {
+		float: left;
+		height: 39px;
+		width: 39px;
+		margin-right: 2px;
+		border: 1px solid #e8e8e8;
+		background: url(../img/panel-indicator-plus.png)  no-repeat center;
+	}
+
+	&__title{
+		width: 523px;
+		height: 39px;
+		@include ubuntu;
+		border: 1px solid #e8e8e8;
+		
+		p {
+			font-size: 13px;
+			cursor: pointer;
+			display: block;
+			margin-left: 58px;
+			margin-top: 10px;
+		}
+	}
+
+	&__info {
+		display: none;
+		margin-top: 20px;
+		width: 480px;
+		margin-left: 45px;
+		font-size: 13px;
+		height: 121px;
+		@include farial;
+	}
+
+		&__click{
+		height: 39px;
+		width: 525px;
+		background-color: white;
+
+		.panel__click .active {
+			.panel__idicator {
+				background: url(../img/panel-indicator-minus.png)  no-repeat center;
+			}
+		}
+	}
+}
+
+.baners {
+	display: block;
+	height: 156px;
+	width: 1160px;
+	@include cent;
+
+	&__list {
+		margin-top: 84px;
+		height: 70px;
+		width: 1160px;
+		background: url(../img/baners-list.png) no-repeat;
+	}
+}
+
+.links-sources {
+	display: block;
+	height: 320px;
+	background-color: #2a2d32;
+}
+	.sources {
+		width: 1160px;
+		@include cent;
+		display: flex;
+		justify-content: space-around;
+}
+
+.links {
+	margin-top:60px;
+
+	&__deskr {
+		@include ubuntu;
+		font-size: 16px;
+		color: #fff;
+		margin-bottom: 40px;
+	}
+
+	&__list {
+		list-style-type: none;
+	}
+
+	&__item {
+		width: 240px;
+		border-bottom: 1px solid #828385;
+		margin-bottom: 15px;
+
+		a {
+			@include farial;
+			font-size: 13px;
+			display:block;
+			padding-bottom: 10px;
+			color: #828385;
+			text-decoration: none;
+
+			&:hover {
+				color: #248cec;
+			}
+		}
+	}
+}
+
+footer {
+	height: 60px;
+	background-color: #242527;
+	
+	.footer {
+		width: 1160px;
+		@include cent;
+		@include farial;
+		display: flex;
+		padding-top: 23px;
+		justify-content: space-around;
+		color: #828385;
+		font-size: 12px;
+	}
+}
+

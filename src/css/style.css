@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1160px; }
+
+.header {
+  display: block;
+  height: 131px;
+  margin-top: 35px; }
+  .header__logo {
+    margin-bottom: 33px;
+    margin-left: 5px;
+    float: left; }
+  .header__social {
+    float: right;
+    height: 20px;
+    width: 168px;
+    margin-top: 11px; }
+  .header__links {
+    background-image: url(../img/sprite-soc.png);
+    float: left;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: 13px; }
+
+.facebook {
+  background-position: 0 0; }
+
+.facebook:hover {
+  background-position: 0 18px; }
+
+.twitter {
+  background-position: 116px 0; }
+
+.twitter:hover {
+  background-position: 116px 18px; }
+
+.rss {
+  background-position: 84px 0; }
+
+.rss:hover {
+  background-position: 84px 18px; }
+
+.linkedin {
+  background-position: 50px 0; }
+
+.linkedin:hover {
+  background-position: 50px 18px; }
+
+.skype {
+  background-position: 20px 0; }
+
+.skype:hover {
+  background-position: 20px 18px; }
+
+.menu {
+  clear: both;
+  display: block;
+  width: 1160px;
+  height: 56px;
+  background-color: #2a2d32; }
+  .menu__main {
+    float: left; }
+  .menu__punkt {
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid #151515; }
+    .menu__punkt_active {
+      background-color: #248cec; }
+    .menu__punkt a {
+      font-family: ubuntu;
+      font-size: 14px;
+      width: 114px;
+      height: 35px;
+      margin: 0 auto;
+      margin-top: 20px;
+      display: block;
+      text-decoration: none;
+      color: white; }
+    .menu__punkt a:hover {
+      color: #f4b60d; }
+  .menu__serch {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+    border: 1px solid #181a1d;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 241px;
+    height: 40px;
+    color: #fff; }
+
+.slider {
+  margin-top: 40px; }
+  .slider li {
+    list-style-type: none; }
+
+.informations {
+  display: flex;
+  margin-top: 49px;
+  height: 220px; }
+
+.info__num {
+  float: left;
+  font-family: ubuntu;
+  font-size: 90px;
+  color: #2a2b2e;
+  opacity: 0.1; }
+
+.info__img {
+  margin-top: 18px;
+  margin-left: 20px; }
+
+.info__deskr {
+  font-family: ubuntu;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 125px; }
+
+.info__artic {
+  font-family: arial;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 125px;
+  margin-top: 20px; }
+
+.info__rmore {
+  font-family: ubuntu;
+  font-size: 14px;
+  margin-left: 125px;
+  margin-top: 17px;
+  display: block;
+  text-decoration: none;
+  color: #000; }
+  .info__rmore:hover {
+    color: blue; }
+
+.plitki {
+  height: 500px;
+  margin-top: 62px;
+  background-color: #2a2d32; }
+  .plitki .box {
+    width: 1160px;
+    margin: 0 auto; }
+  .plitki__deskr {
+    font-family: ubuntu;
+    color: #fff;
+    padding-top: 45px;
+    font-size: 24px; }
+  .plitki__list {
+    display: inline-flex;
+    margin-top: 50px; }
+  .plitki__item {
+    background-image: url(../img/pl-opas.png);
+    display: block;
+    width: 260px;
+    height: 260px;
+    margin-right: 35px; }
+    .plitki__item img:hover {
+      opacity: 0.3;
+      background-color: #2f91ea; }
+  .plitki p {
+    font-family: ubuntu;
+    overflow: visible;
+    color: #fff;
+    margin-top: 35px;
+    font-size: 16px; }
+
+.news {
+  height: 545px;
+  background-color: #f7f7f7; }
+  .news__bord {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto; }
+  .news__deskr {
+    font-family: ubuntu;
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+  .news__img1 {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/adv-machin.png); }
+  .news__img2 {
+    float: left;
+    width: 150px;
+    height: 150px;
+    background-image: url(../img/pwf-tech.png); }
+  .news__seccol {
+    clear: both;
+    padding-top: 22px; }
+  .news__firstrow {
+    width: 570px; }
+  .news__secondrows {
+    margin-left: 31px; }
+
+.article {
+  margin-left: 191px;
+  width: 381px; }
+  .article span {
+    color: #0187f4;
+    cursor: pointer; }
+  .article__deskr {
+    font-family: ubuntu;
+    font-size: 16px; }
+  .article__article {
+    font-family: arial;
+    font-size: 13px;
+    margin-top: 20px; }
+
+.panel {
+  margin-bottom: 5px; }
+  .panel__indicator {
+    float: left;
+    height: 39px;
+    width: 39px;
+    margin-right: 2px;
+    border: 1px solid #e8e8e8;
+    background: url(../img/panel-indicator-plus.png) no-repeat center; }
+  .panel__title {
+    width: 523px;
+    height: 39px;
+    font-family: ubuntu;
+    border: 1px solid #e8e8e8; }
+    .panel__title p {
+      font-size: 13px;
+      cursor: pointer;
+      display: block;
+      margin-left: 58px;
+      margin-top: 10px; }
+  .panel__info {
+    display: none;
+    margin-top: 20px;
+    width: 480px;
+    margin-left: 45px;
+    font-size: 13px;
+    height: 121px;
+    font-family: arial; }
+  .panel__click {
+    height: 39px;
+    width: 525px;
+    background-color: white; }
+    .panel__click .panel__click .active .panel__idicator {
+      background: url(../img/panel-indicator-minus.png) no-repeat center; }
+
+.baners {
+  display: block;
+  height: 156px;
+  width: 1160px;
+  margin: 0 auto; }
+  .baners__list {
+    margin-top: 84px;
+    height: 70px;
+    width: 1160px;
+    background: url(../img/baners-list.png) no-repeat; }
+
+.links-sources {
+  display: block;
+  height: 320px;
+  background-color: #2a2d32; }
+
+.sources {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; }
+
+.links {
+  margin-top: 60px; }
+  .links__deskr {
+    font-family: ubuntu;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 40px; }
+  .links__list {
+    list-style-type: none; }
+  .links__item {
+    width: 240px;
+    border-bottom: 1px solid #828385;
+    margin-bottom: 15px; }
+    .links__item a {
+      font-family: arial;
+      font-size: 13px;
+      display: block;
+      padding-bottom: 10px;
+      color: #828385;
+      text-decoration: none; }
+      .links__item a:hover {
+        color: #248cec; }
+
+footer {
+  height: 60px;
+  background-color: #242527; }
+  footer .footer {
+    width: 1160px;
+    margin: 0 auto;
+    font-family: arial;
+    display: flex;
+    padding-top: 23px;
+    justify-content: space-around;
+    color: #828385;
+    font-size: 12px; }
